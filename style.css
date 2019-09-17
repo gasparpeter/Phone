@@ -1,0 +1,36 @@
+#phone-container {
+    width: 300px;
+    height: 580px;
+    background-color: black;
+    margin: 20px auto;
+    border-radius: 8%;
+}
+
+#screen-container {
+    width: 275px;
+    height: 480px;
+    border: 2px solid #363636;
+    margin: 20px auto;
+    position: relative;
+    top: 7%;
+}
+
+#home-btn {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid #363636;
+    margin: 29px auto;
+    position: relative;
+    left: 44%;
+    outline: none;
+/*}*/
+
+/*#line { width:12%;*/
+/*    height:2px;*/
+/*    background: red;*/
+/*    position: relative;*/
+/*    top: 7%;*/
+/*    left: 30%;*/
+/*}*/
