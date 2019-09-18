@@ -75,7 +75,19 @@
 }
 
 input {
-    width: 150px;
+    width: 170px;
     height: 19px;
     padding: 0;
+}
+
+#backspace {
+    background-image: url("https://image.flaticon.com/icons/svg/61/61167.svg");
+    background-position: center;
+    background-size: 100%;
+}
+
+#done {
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_320863.png");
+    background-position: center;
+    background-size: 100%;
 }
