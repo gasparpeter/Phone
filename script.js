@@ -5,6 +5,10 @@ let utasitas = document.getElementById('text');
 let input = document.getElementById('inputka');
 let homeBtn = document.getElementById('home-btn');
 let doneBtn = document.getElementById('done');
+let homeScreen = document.getElementById("home-screen");
+let powerBtn = document.getElementById('powerBtn');
+
+var audio = new Audio('iPhonelock.mp3');
 
 let passcode = "akph";
 
@@ -14,8 +18,16 @@ homeBtn.addEventListener('click', function () {
 
 doneBtn.addEventListener('click', function () {
    if (input.value === passcode) {
-       alert('jo')
+       pinContainer.style.display = 'none';
+       homeScreen.style.display = 'block';
    }else {
-       alert('nem jo')
+       input.style.border = '1px solid red'
    }
+});
+
+powerBtn.addEventListener('click', function () {
+   pinContainer.style.display = 'none';
+   homeScreen.style.display = 'none';
+   input.value = null;
+   audio.play();
 });
