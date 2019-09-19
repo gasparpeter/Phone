@@ -13,6 +13,7 @@
     margin: 20px auto;
     position: relative;
     top: 7%;
+    background-color: black;
 }
 
 #home-btn {
@@ -42,6 +43,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://www.setaswall.com/wp-content/uploads/2018/05/Sea-Foam-Surf-Water-Wallpaper-720x1520.jpg");
     background-position: center;
     position: absolute;
+    display: none;
 }
 
 .pinBtn {
@@ -79,7 +81,7 @@
     height: 35px;
     padding: 0;
     color: #000000;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     top: 50%;
     left: 17%;
