@@ -64,30 +64,25 @@
 
 #text {
     position: relative;
-    top: 1%;
+    top: 40%;
     font-size: 15px;
     color: white;
-    left: 19%;
+    left: 32%;
 }
 
 #utasitas {
     margin: 50px;
 }
 
-input {
-    width: 170px;
-    height: 19px;
+#inputka {
+    width: 180px;
+    height: 35px;
     padding: 0;
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    text-align: center;
 }
 
-#backspace {
-    background-image: url("https://image.flaticon.com/icons/svg/61/61167.svg");
-    background-position: center;
-    background-size: 100%;
-}
-
-#done {
-    background-image: url("http://cdn.onlinewebfonts.com/svg/img_320863.png");
-    background-position: center;
-    background-size: 100%;
-}
