@@ -116,11 +116,58 @@
 }
 
 #telephone {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background-image: url("https://icons-for-free.com/iconfiles/png/512/contact+mobile+phone+telephone+icon-1320168260690280424.png");
     background-size: 100%;
     position: relative;
-    top: 90%;
+    top: 87%;
     outline: none;
+    margin: 0;
+    padding: 0;
+    left: 1%;
+    /*display: none;*/
 }
+
+#safari {
+    width: 65px;
+    height: 65px;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/safari_5122x.png");
+    background-size: 100%;
+    position: relative;
+    top: 87%;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    left: 1%;
+    /*display: none;*/
+}
+
+#music {
+    width: 65px;
+    height: 65px;
+    background-image: url("http://www.iconarchive.com/download/i85621/graphicloads/100-flat/sound-3.ico");
+    background-size: 100%;
+    position: relative;
+    top: 87%;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    left: 1%;
+    /*display: none;*/
+}
+
+#messages {
+    width: 65px;
+    height: 65px;
+    background-image: url("https://www.sccpre.cat/mypng/detail/0-6611_messages-icon-ios-message-icon-png.png");
+    background-size: 100%;
+    position: relative;
+    top: 87%;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    left: 1%;
+    /*display: none;*/
+}
+
