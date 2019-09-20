@@ -163,7 +163,7 @@
     background-image: url("https://www.sccpre.cat/mypng/detail/0-6611_messages-icon-ios-message-icon-png.png");
     background-size: 100%;
     position: relative;
-    top: 87%;
+    top: 73%;
     outline: none;
     margin: 0;
     padding: 0;
@@ -188,4 +188,17 @@
 
 #music-back {
 
+ }
+
+#album {
+    width: 65px;
+    height: 65px;
+    background-image: url("https://www.pinclipart.com/picdir/middle/164-1647836_album-collection-list-music-playlist-songs-icon-gallery.png");
+    background-size: 100%;
+    position: relative;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    left: 3%;
+    top: 3%;
 }
