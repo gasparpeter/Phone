@@ -115,3 +115,12 @@
     display: block;
 }
 
+#telephone {
+    width: 50px;
+    height: 50px;
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/contact+mobile+phone+telephone+icon-1320168260690280424.png");
+    background-size: 100%;
+    position: relative;
+    top: 90%;
+    outline: none;
+}
