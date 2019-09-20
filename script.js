@@ -7,6 +7,8 @@ let homeBtn = document.getElementById('home-btn');
 let doneBtn = document.getElementById('done');
 let homeScreen = document.getElementById("home-screen");
 let powerBtn = document.getElementById('powerBtn');
+let musicScreen = document.getElementById('music-screen');
+let akph = document.getElementById('akph');
 
 let telephone = document.getElementById('telephone');
 let safari = document.getElementById('safari');
@@ -14,6 +16,8 @@ let music = document.getElementById('music');
 let messages = document.getElementById('messages');
 
 var audio = new Audio('iPhonelock.mp3');
+
+var audio2 = new Audio('nekemtene.mp3');
 
 let passcode = "akph";
 
@@ -37,7 +41,10 @@ powerBtn.addEventListener('click', function () {
    pinContainer.style.display = 'none';
    homeScreen.style.display = 'none';
    input.value = null;
-   audio.play();
+   musicScreen.style.display = 'none';
+   musicScreen.style.display = 'none';
+    audio.play();
+    audio2.pause();
 });
 
 function topItems() {
@@ -46,3 +53,13 @@ function topItems() {
     music.style.display = 'inline-block';
     messages.style.display = 'inline-block';
 }
+
+music.addEventListener('click', function () {
+    pinContainer.style.display = 'none';
+    homeScreen.style.display = 'none';
+    musicScreen.style.display = 'block';
+});
+
+akph.addEventListener('click', function () {
+   audio2.play();
+});
