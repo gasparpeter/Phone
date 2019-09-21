@@ -9,6 +9,7 @@ let homeScreen = document.getElementById("home-screen");
 let powerBtn = document.getElementById('powerBtn');
 let musicScreen = document.getElementById('music-screen');
 let akph = document.getElementById('akph');
+let back = document.getElementById('music-back');
 
 let telephone = document.getElementById('telephone');
 let safari = document.getElementById('safari');
@@ -54,12 +55,27 @@ function topItems() {
     messages.style.display = 'inline-block';
 }
 
+function home() {
+    pinContainer.style.display = 'none';
+    musicScreen.style.display = 'none';
+    homeScreen.style.display = 'block';
+    musicScreen.style.display = 'none';
+    topItems();
+}
+
 music.addEventListener('click', function () {
     pinContainer.style.display = 'none';
     homeScreen.style.display = 'none';
     musicScreen.style.display = 'block';
+    backBtn();
 });
 
 akph.addEventListener('click', function () {
    audio2.play();
 });
+
+function backBtn() {
+    back.style.display = 'block';
+}
+
+back.addEventListener('click', home);
