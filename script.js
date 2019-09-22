@@ -10,6 +10,8 @@ let powerBtn = document.getElementById('powerBtn');
 let musicScreen = document.getElementById('music-screen');
 let akph = document.getElementById('akph');
 let back = document.getElementById('music-back');
+let albumBtn = document.getElementById('album');
+let albumScreen = document.getElementById('album-screen');
 
 let telephone = document.getElementById('telephone');
 let safari = document.getElementById('safari');
@@ -79,3 +81,11 @@ function backBtn() {
 }
 
 back.addEventListener('click', home);
+
+albumBtn.addEventListener('click', function () {
+    pinContainer.style.display = 'none';
+    homeScreen.style.display = 'none';
+    musicScreen.style.display = 'none';
+    albumScreen.style.display = 'block';
+    backBtn();
+});
