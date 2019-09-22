@@ -1,22 +1,37 @@
+
+// Containers
 let phoneContainer = document.getElementById('phone-container');
 let screenContainer = document.getElementById('screen-container');
 let pinContainer = document.getElementById('pin');
-let utasitas = document.getElementById('text');
-let input = document.getElementById('inputka');
+
+// buttons
 let homeBtn = document.getElementById('home-btn');
 let doneBtn = document.getElementById('done');
-let homeScreen = document.getElementById("home-screen");
 let powerBtn = document.getElementById('powerBtn');
-let musicScreen = document.getElementById('music-screen');
-let akph = document.getElementById('akph');
 let back = document.getElementById('music-back');
 let albumBtn = document.getElementById('album');
+
+let utasitas = document.getElementById('text');
+let input = document.getElementById('inputka');
+let akph = document.getElementById('akph');
+
+
+
+
+// screen
+let homeScreen = document.getElementById("home-screen");
+let musicScreen = document.getElementById('music-screen');
 let albumScreen = document.getElementById('album-screen');
 
+
+// top apps
 let telephone = document.getElementById('telephone');
 let safari = document.getElementById('safari');
 let music = document.getElementById('music');
 let messages = document.getElementById('messages');
+
+
+
 
 var audio = new Audio('iPhonelock.mp3');
 
@@ -25,7 +40,14 @@ var audio2 = new Audio('nekemtene.mp3');
 let passcode = "akph";
 
 homeBtn.addEventListener('click', function () {
-   pinContainer.style.display = 'block';
+
+    if (musicScreen.style.display = 'none') {
+        pinContainer.style.display = 'block';
+    }else {
+        home()
+    }
+
+
 });
 
 
@@ -46,6 +68,7 @@ powerBtn.addEventListener('click', function () {
    input.value = null;
    musicScreen.style.display = 'none';
    musicScreen.style.display = 'none';
+   albumScreen.style.display = 'none';
     audio.play();
     audio2.pause();
 });
