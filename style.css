@@ -233,3 +233,28 @@
     background-position: center;
     position: absolute;
 }
+
+#galery {
+    width: 110px;
+    height: 110px;
+    background-color: #354657;
+    margin: 2px;
+    display: none;
+    font-size: 17px;
+    color: white;
+}
+
+#screenshots {
+    width: 110px;
+    height: 110px;
+    background-color: #354657;
+    margin: 2px;
+    display: none;
+    font-size: 17px;
+    color: white;
+}
+
+#default-pictures{
+    display: none;
+}
+

@@ -16,7 +16,9 @@ let input = document.getElementById('inputka');
 let akph = document.getElementById('akph');
 
 
-
+let galery = document.getElementById('galery');
+let screenshots = document.getElementById('screenshots');
+let defaultPictures = document.getElementById('default-pictures');
 
 // screen
 let homeScreen = document.getElementById("home-screen");
@@ -41,12 +43,7 @@ let passcode = "akph";
 
 homeBtn.addEventListener('click', function () {
 
-    if (musicScreen.style.display = 'none') {
-        pinContainer.style.display = 'block';
-    }else {
-        home()
-    }
-
+    pinContainer.style.display = 'block';
 
 });
 
@@ -110,5 +107,13 @@ albumBtn.addEventListener('click', function () {
     homeScreen.style.display = 'none';
     musicScreen.style.display = 'none';
     albumScreen.style.display = 'block';
+    screenshots.style.display = 'inline-block';
+    galery.style.display = 'inline-block';
     backBtn();
+});
+
+galery.addEventListener('click', function () {
+    screenshots.style.display = 'none';
+    galery.style.display = 'none';
+   defaultPictures.style.display = 'block'
 });
