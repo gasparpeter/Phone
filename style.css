@@ -258,3 +258,11 @@
     display: none;
 }
 
+#message-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #474747;
+    background-position: center;
+    position: absolute;
+    display: none;
+}

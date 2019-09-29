@@ -4,6 +4,7 @@ let phoneContainer = document.getElementById('phone-container');
 let screenContainer = document.getElementById('screen-container');
 let pinContainer = document.getElementById('pin');
 
+
 // buttons
 let homeBtn = document.getElementById('home-btn');
 let doneBtn = document.getElementById('done');
@@ -24,7 +25,7 @@ let defaultPictures = document.getElementById('default-pictures');
 let homeScreen = document.getElementById("home-screen");
 let musicScreen = document.getElementById('music-screen');
 let albumScreen = document.getElementById('album-screen');
-
+let messageScreen = document.getElementById('message-screen');
 
 // top apps
 let telephone = document.getElementById('telephone');
@@ -43,6 +44,7 @@ let passcode = "akph";
 
 homeBtn.addEventListener('click', function () {
 
+
     pinContainer.style.display = 'block';
 
 });
@@ -59,16 +61,19 @@ doneBtn.addEventListener('click', function () {
    }
 });
 
-powerBtn.addEventListener('click', function () {
-   pinContainer.style.display = 'none';
-   homeScreen.style.display = 'none';
-   input.value = null;
-   musicScreen.style.display = 'none';
-   musicScreen.style.display = 'none';
-   albumScreen.style.display = 'none';
+powerBtn.addEventListener('click', power);
+
+function power() {
+    pinContainer.style.display = 'none';
+    homeScreen.style.display = 'none';
+    input.value = null;
+    musicScreen.style.display = 'none';
+    musicScreen.style.display = 'none';
+    albumScreen.style.display = 'none';
+    messageScreen.style.display = 'none';
     audio.play();
     audio2.pause();
-});
+}
 
 function topItems() {
     telephone.style.display = 'inline-block';
@@ -82,6 +87,9 @@ function home() {
     musicScreen.style.display = 'none';
     homeScreen.style.display = 'block';
     musicScreen.style.display = 'none';
+    albumScreen.style.display = 'none';
+    screenshots.style.display = 'none';
+    galery.style.display = 'none';
     topItems();
 }
 
@@ -117,3 +125,16 @@ galery.addEventListener('click', function () {
     galery.style.display = 'none';
    defaultPictures.style.display = 'block'
 });
+
+messages.addEventListener('click', function () {
+    screenshots.style.display = 'none';
+    galery.style.display = 'none';
+    defaultPictures.style.display = 'none';
+    telephone.style.display = 'none';
+    safari.style.display = 'none';
+    music.style.display = 'none';
+    messages.style.display = 'none';
+    messageScreen.style.display = 'block';
+});
+
+
