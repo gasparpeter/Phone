@@ -271,8 +271,8 @@
 
 #list {
     float: left;
-    width: 20vw;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     background-color: #597588;
     display: none;
 }
