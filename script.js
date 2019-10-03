@@ -42,6 +42,7 @@ let name = document.getElementById('input');
 let message = document.getElementById('textarea');
 let sendBtn = document.getElementById('send');
 let header = document.getElementById('header');
+let backMessage = document.getElementById('message-back');
 
 let SMS = [];
 
@@ -161,6 +162,11 @@ header.addEventListener('click', function () {
    list.style.display = 'block';
 });
 
+backMessage.addEventListener('click', function () {
+   list.style.display = 'none';
+   container.style.display = 'block';
+});
+
 sendBtn.addEventListener('click', function () {
 
     if ( editmode && editIndex !== null ) {
@@ -183,6 +189,18 @@ sendBtn.addEventListener('click', function () {
                 "name": name.value,
                 "message": message.value
             });
+
+            function deleteLI() {
+                names.remove();
+                deleteItem.remove();
+            }
+
+
+            const deleteItem = document.createElement('button');
+            deleteItem.innerText = "DELETE";
+            list.appendChild(deleteItem);
+
+            deleteItem.addEventListener('click', deleteLI);
 
             names.addEventListener('click',  function (e) {
                 list.style.display = 'none';
